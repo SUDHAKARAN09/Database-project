@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>User Registration and Retrieval</title>
+</head>
+<body>
+  <h1>User Registration</h1>
+  <form id="registrationForm" method="post">
+    <label for="user_id">User ID:</label>
+    <input type="text" id="user_id" placeholder="User ID" required autocomplete="username">
+    
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Username" required autocomplete="name">
+    
+    <label for="accountnumber">Account Number:</label>
+    <input type="text" id="accountnumber" placeholder="Account Number" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Password" required autocomplete="new-password">
+    
+    <label for="emailid">Email ID:</label>
+    <input type="email" id="emailid" placeholder="Email ID" required autocomplete="email">
+    
+    <label for="mobilenumber">Mobile Number:</label>
+    <input type="tel" id="mobilenumber" placeholder="Mobile Number" required autocomplete="tel">
+    
+    <button type="submit">Register</button>
+  </form>
+
+  <h1>Retrieve User Data</h1> 
+  <form id="retrievalForm" method="get">
+    <label for="retrieve_user_id">User ID:</label>
+    <input type="text" id="retrieve_user_id" placeholder="User ID" required>
+    <button type="submit">Retrieve</button>
+  </form>
+
+  <h2>Retrieved User Data</h2>
+  <div id="userData">
+    <!-- User data will be displayed here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
